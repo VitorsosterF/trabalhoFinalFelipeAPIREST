@@ -2,6 +2,7 @@ package com.VitorsosterF.exercicioPraticoAPIREST.controller;
 
 import com.VitorsosterF.exercicioPraticoAPIREST.model.Carro;
 import com.VitorsosterF.exercicioPraticoAPIREST.repository.CarroRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 @RequestMapping("/api/carro")
 public class CarroController {
 
+    @Autowired
     private final CarroRepository carroRepository;
 
     public CarroController(CarroRepository carroRepository) {
