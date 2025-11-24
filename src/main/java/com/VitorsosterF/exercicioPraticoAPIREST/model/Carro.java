@@ -8,7 +8,7 @@ public class Carro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String marca;
     private String modelo;
